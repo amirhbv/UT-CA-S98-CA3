@@ -1,3 +1,5 @@
+`timescale 1ns/1ns
+
 module datapath(
 	input clk,
 	input ld_IR,

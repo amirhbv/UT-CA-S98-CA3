@@ -1,3 +1,5 @@
+`timescale 1ns/1ns
+
 module Memory(
 	input clk,
 	input write_enable,

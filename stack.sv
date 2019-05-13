@@ -1,3 +1,4 @@
+`timescale 1ns/1ns
 
 module Stack(
 	input  [7:0] d_in,

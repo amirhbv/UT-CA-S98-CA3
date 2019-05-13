@@ -1,3 +1,5 @@
+`timescale 1ns/1ns
+
 module controller(
 	input clk,rst,
 	input[2:0] inst,
