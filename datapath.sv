@@ -1,6 +1,6 @@
 `timescale 1ns/1ns
 
-module datapath(
+module Datapath(
 	input clk,
 	input ld_IR,
 		PCorIR,
@@ -18,7 +18,7 @@ module datapath(
 	output[2:0] inst
 ) ;
 
-	reg [4:0] PC ;
+	reg [4:0] PC, address ;
 	reg [7:0] A, B, IR, MDR, ALUres ;
 	wire[7:0] wireA, wireB, wireReadMem, ALUout, ALUorMEM, StackOut;
 	wire[4:0] addr, PCin ;

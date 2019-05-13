@@ -2,7 +2,7 @@
 
 module TB();
 	reg rst, clk = 0;
-	CPU processor (clk, rst);
+	Processor cpu (clk, rst);
 	always #10 clk = ~clk;
 	initial begin
 		#100;

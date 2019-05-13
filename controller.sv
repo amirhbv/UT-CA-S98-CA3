@@ -1,6 +1,6 @@
 `timescale 1ns/1ns
 
-module controller(
+module Controller(
 	input clk,rst,
 	input[2:0] inst,
 	output reg ld_IR,
