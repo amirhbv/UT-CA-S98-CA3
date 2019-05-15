@@ -7,10 +7,10 @@ module ALU(
 );
 	always @(*) begin
 		case(aluOp)
-			7'b00 : result = data_i + data_j ;
-			7'b01 : result = data_i - data_j ;
-			7'b10 : result = data_i & data_j ;
-			7'b11 : result = ~data_i ;
+			2'b00 : result = data_i + data_j ;
+			2'b01 : result = data_i - data_j ;
+			2'b10 : result = data_i & data_j ;
+			2'b11 : result = ~data_i ;
 		endcase
 	end
 endmodule
