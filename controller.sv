@@ -118,7 +118,7 @@ module Controller(
 				case (cnt)
 					3'b000 : ldA = 1 ;
 					3'b001 : begin pop = 1 ; ALUop = 2'b11 ; end
-					3'b100 : begin push = 1 ; ns = incPC ; MEMorALU = 1 ; end
+					3'b010 : begin push = 1 ; ns = incPC ; MEMorALU = 1 ; end
 				endcase
 			end
 

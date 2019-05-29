@@ -5,9 +5,8 @@ module TB();
 	Processor cpu (clk, rst);
 	always #10 clk = ~clk;
 	initial begin
-		#100;
 		rst = 1;
-		#100;
+		#200;
 		rst = 0;
 		#10000;
 		$stop;
