@@ -8,13 +8,12 @@ module Stack(
 );
 	reg [7:0] mem [0:31];
 	reg [4:0] addr = 0 ;
-	assign d_out = mem[addr - 1] ;
-	always @(posedge clk) begin
+	assign d_out = mem[addr] ;
+	always @(posedge push , posedge pop) begin
 		if ( push ) begin
-			addr <= addr + 1 ;
-			mem[addr] <= d_in ;
-		end
-		if ( pop )
+			addr = addr + 1 ;
+			mem[addr] = d_in ;
+		end else if ( pop & addr > 0 )
 			addr = addr - 1 ;
 	end
 
